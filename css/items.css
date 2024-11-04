@@ -1,0 +1,145 @@
+main .breadcrumb {
+	padding: 15px 20px;
+}
+
+main .breadcrumb a {
+	color: gray;
+	text-decoration: none;
+}
+
+main .breadcrumb span {
+	margin: 0 10px;
+	color: darkgray;
+}
+
+
+/* article styles */
+article { 
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article .product-image {
+	text-align: center;
+}
+article .product-image img {
+	max-width: 100%;
+	height: auto;
+}
+article .product-info {
+	padding-right: 20px;
+}
+article .product-info h1 {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+article .product-code {
+	margin-bottom: 10px;
+	color: lightgray;
+}
+article .product-brand {
+	margin-bottom: 20px;
+}
+article .product-brand strong {
+	margin-right: 10px;
+}
+article .price {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+article .oldprice {
+	text-decoration: line-through;
+	color: darkgrey;
+	font-size: 0.8em;
+}
+article .quantity {
+	margin-bottom: 20px;
+}
+article .quantity label {
+	display: block;
+	margin-bottom: 5px;
+}
+article .quantity-controls {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+article .quantity input {
+	width: 60px;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid lightgray;
+}
+article .quantity button {
+	padding: 8px 12px;
+	background: lightgrey;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+article .add-to-basket {
+	width: 100%;
+	padding: 15px;
+	background-color: #2c3e50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+article .add-to-basket:hover {
+	background-color: #34495e;
+}
+
+article .social-share {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+article .rating span {
+    margin: 10px 0;
+}
+article .material-symbols-outlined {
+    font-size: 20px;
+}
+article .material-symbols-outlined.filled {
+    color: gold;
+}
+article .material-symbols-outlined.empty {
+    color: lightgray;
+}
+
+article .tabs {
+	grid-column: 1 / span 2;
+}
+
+article .tab-buttons {
+	display: flex;
+	gap: 2px;
+	margin-bottom: 20px;
+}
+
+article .tab-button {
+	padding: 10px 20px;
+	background: lightgrey;
+	border: none;
+	cursor: pointer;
+}
+
+article .tab-button.active {
+	background: #2c3e50;
+	color: white;
+}
+
+article .technical-specs table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+article .technical-specs td {
+	padding: 8px;
+	border: 1px solid darkgray;
+}
+
+article .technical-specs tr:nth-child(even) {
+	background-color: lightgray;
+}

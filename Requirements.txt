@@ -1,0 +1,67 @@
+Part 1:
+  Structural Requirements
+    1.	You must submit valid https://validator.w3.org/ and semantically appropriate HTML5 code (use of semantic tags like header/nav/etc.).
+    2.	In your README.md file, you must explain how your webpage applies the 7 Gestalt Principles we have discussed in class, and ensure that your answers are easy to read.
+    3.	You must create at least 3 web pages that will define your Website. The pages must be named properly in their filenames and page titles.
+    4.	Each of your pages must be consistent with one another. There should be:
+    4.1.	a consistent look and feel between pages
+    4.2.	navigation menu with links from/to all 3 other pages 
+    5.	Your Website must include:
+    5.1.	A logo for your company. (do not use copyrighted content from found on the Internet)
+    5.2.	Appropriate content on every page.
+    5.3.	Appropriate META tags must be provided for each page.
+    5.4.	Ensure a unique and descriptive <title> tag for each page.
+    6.	Use the following elements in your Website:
+    6.1.	At least, one photo enclosed in a <figure> with a <figcaption> (not the logo). 
+    All images must be stored in a local directory called images. You must define "alt" attributes for all pictures for accessibility. These images must be included in your Git repo.
+    (Note that you may leave the value of alt attribute empty for decorative images.)
+    6.2.	At least one HTML comment. This can be anywhere in the page.
+    6.3.	One External link to another Website that opens in a new tab
+    6.4.	At least one link to another place on the same page.
+    6.5.	A table with a merged (spanned) cell.
+    7.	Semantic markup:
+    7.1.	Use <nav> tag and define a consistent "menu" on each page.
+    7.2.	Use <article>, <header>, <main>, and <footer> tags to properly define the structure of your pages.
+    8.	A form design for contacting you that has:
+    8.1.	Salutation
+    8.2.	First name
+    8.3.	Last name
+    8.4.	Phone number
+    8.5.	Email
+    8.6.	Subject
+    8.7.	Body
+    8.8.	Control the user input as follows:
+    8.8.1.	Use the most appropriate HTML5 inputs for each item above
+    8.8.2.	All fields are required
+    8.8.3.	‘Autofocus’ must be set to the First name
+    8.8.4.	Include a placeholder email to show the valid format and a pattern to validate the input.
+    8.8.5.	Include a placeholder telephone to show the valid format and a pattern to validate the input.
+    9.	Furthermore, add the following elements to your form (you may include them in a relevant requirement from 8):
+    9.1.	Radio buttons with at least 2 different options.
+    9.2.	Checkboxes with at least 2 different options to select.
+    10.	Finally, ensure that your form has:
+    10.1.	A reset button that clears all form inputs
+    10.2.	A submit button that submits the form to an email address.
+    11.	Valid HTML5 markup. Your site should validate without error (warnings are ok).
+    12.	Submit your own raw HTML code – evidence of automatically generated HTML code will result in a 0. 
+    13.	Do not add any internal or embedded CSS, or JavaScript, or other advanced components to the site.
+    
+  Styling Requirements
+    1.	Use external CSS files to style your Website. Include all your CSS files inside a folder called “style” and include them in the <head> section of your HTML files.
+    2.	All pages must use consistent font, margin, padding. These must be defined using a general CSS file shared by all pages. Page-specific styles should be defined in separate CSS files. Note that you can include multiple CSS files for your HTML files.
+    3.	General requirements:
+    3.1.	Navigation menu: In every page, the menu item of the current page must be styled differently. (e.g. special color to indicate the user is at this menu item’s page)
+    3.2.	Use the first-letter pseudo element selector to style a first letter of (at least) one of your paragraphs differently.
+    3.3.	Use a pseudo class selector of your choice in one of your pages.
+    3.4.	Use a contextual selector of your choice in one of your pages.
+    3.5.	Use an attribute selector of your choice in one of your pages.
+    3.6.	Style your table using CSS properties to have striped table format (i.e., style even and odd rows with different colors. You should not use inline styling for this!
+    3.7.	Float an image to the right side of a paragraph of your choice in your Website.
+    3.8.	Uses consistent design for the header and footer area in all pages. The whole website should have a professional look and design.
+    4.	When choosing your colors, make sure to apply the color palette choices that you saw and applied through: Sept 12 - In Class Activity
+
+
+Reference: https://docs.google.com/document/d/1FQ8_7J8ZwtUmNAGYCSjdGhZWqdfgW86C0wREJ9Q3grE/edit?usp=sharing
+                                                                              
+
+                                                                          

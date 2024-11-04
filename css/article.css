@@ -1,0 +1,70 @@
+/* article main styles */
+article, .article-content-grid {
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 30px;
+}
+
+/* article breadcrumb styles */
+main .breadcrumb {
+	padding: 15px 20px;
+}
+main .breadcrumb a {
+	color: gray;
+	text-decoration: none;
+}
+main .breadcrumb span {
+	margin: 0 10px;
+	color: darkgray;
+}
+
+/* article styles */
+main h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-style: italic;
+}
+
+main h3 {
+    font-size: 1.4em;
+    color: lightgray;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+main .article-content, .article-content-grid {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+main .article-content em,
+main .article-content a,
+main .article-content-grid em,
+main .article-content-grid a {
+    color: lightslategrey;
+    text-decoration: none;
+}
+
+main .article-content a:hover {
+    text-decoration: underline;
+}
+
+/* article grid style */
+main .article-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .text-column {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .image-column {
+    width: 90%;
+    line-height: 1.8;
+    padding: 0 1%;
+}

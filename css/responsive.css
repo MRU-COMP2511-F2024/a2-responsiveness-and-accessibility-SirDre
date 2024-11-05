@@ -1,0 +1,41 @@
+/* responsive design or accessibility */
+/* wide desktop screen */
+@media screen and (min-width: 1025px) {
+    .banner-grid {
+        flex-wrap: nowrap;
+        height: 200px;
+    }
+
+}
+/* desktop screen */
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+/* ipad screen */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/* mobile screen */
+@media screen and (max-width: 480px) {
+    header,
+    nav ul,
+    .banner-grid,
+    .company-info,
+    .upper-container,
+    .info {
+        flex-direction: column;
+    }
+    
+
+    .info > div {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

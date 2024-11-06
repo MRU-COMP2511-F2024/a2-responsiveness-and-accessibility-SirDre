@@ -172,4 +172,21 @@ main .product-grid {
     flex-direction: column;
     align-items: center;
   }
+
+  /*Vertical navigation, this is responsible for how the header list looks.*/
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Single-column layout for tyhe main content(Arranges each item in a single column */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+  }
 }

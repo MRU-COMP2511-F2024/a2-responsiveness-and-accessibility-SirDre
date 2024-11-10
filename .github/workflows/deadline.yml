@@ -1,0 +1,50 @@
+# Deadline Check workflow for fail commits after deadline dates
+name: Deadline Check for November 18, 2024
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check-deadline:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch all history
+        
+    - name: Check commit dates
+      run: |
+        # Set deadline date (MST)
+        DEADLINE="2024-11-18T11:59:59Z"
+        DEADLINE_TIMESTAMP=$(date -d "$DEADLINE" +%s)
+        
+        # Get all commits in the push/PR
+        if [ "${{ github.event_name }}" == "pull_request" ]; then
+          COMMITS=$(git log --format=%at origin/${{ github.base_ref }}..${{ github.event.pull_request.head.sha }})
+        else
+          COMMITS=$(git log --format=%at -n 1)
+        fi
+        
+        # Check each commit
+        VIOLATION=0
+        for COMMIT_TIMESTAMP in $COMMITS; do
+          if [ $COMMIT_TIMESTAMP -gt $DEADLINE_TIMESTAMP ]; then
+            echo "Error: Found commit after deadline of November 18, 2024 11:59:59"
+            VIOLATION=1
+            # Convert timestamp to readable date for error message
+            COMMIT_DATE=$(date -d "@$COMMIT_TIMESTAMP" "+%Y-%m-%d %H:%M:%S MST")
+            echo "Commit date: $COMMIT_DATE"
+          fi
+        done
+        
+        if [ $VIOLATION -eq 1 ]; then
+          echo "::error::Commits are not suppose to be made after deadline date"
+          exit 1
+        else
+          echo "All commits are before the deadline"
+        fi

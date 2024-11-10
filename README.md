@@ -100,6 +100,22 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
 
 - Ref: a1-html-and-css-mock-up.pdf (#TODO: put link)
 
+### Bash Merge CMD:
+
+<code>$ git remote add source-repo https://github.com/MRU-COMP2511-F2024/a1-responsiveness-and-web-accessibility-SirDre</code>
+
+<code>$ git fetch source-repo</code>
+
+<code>$ git merge source-repo/main</code>
+
+<code>$ git pull source-repo main --allow-unrelated-histories</code>
+
+<code>git add .</code>
+
+<code>git commit -m "Merged from source repository"</code>
+
+<code>git push origin main</code>
+
 ### Idea References:
 
 **LOGO**

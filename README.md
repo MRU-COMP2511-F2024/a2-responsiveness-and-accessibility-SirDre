@@ -4,6 +4,9 @@
 https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/edit?usp=sharing
 
 # Responsiveness and web Accessibility
+### Live links:
+- https://mru-comp2511-f2024.github.io/a2-responsiveness-and-accessibility-SirDre/index.html
+- https://agrigadget.netlify.app
 
 # Part 2
 ### Questions:

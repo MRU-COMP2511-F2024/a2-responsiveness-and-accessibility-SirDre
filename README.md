@@ -4,8 +4,17 @@
 https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/edit?usp=sharing
 
 # Responsiveness and web Accessibility
+### Live links:
+- https://mru-comp2511-f2024.github.io/a2-responsiveness-and-accessibility-SirDre/index.html
+- https://agrigadget.netlify.app
 
 # Part 2
+### Questions:
+- document the category of issues that you identified through the manual and automated analysis above
+- What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
+- How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
+
+
 ## Agriculture store
 
 **Topic:  Agriculture store**

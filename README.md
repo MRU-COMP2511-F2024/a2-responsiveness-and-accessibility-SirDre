@@ -47,19 +47,19 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
 - Use **external CSS files** - responsive.css
 - All pages must use consistent font, margin, padding.
 - Uses consistent design for the header and footer area in all pages. 
-**CSS Requirements:**
+**Break points for small, medium, and large devices Requirements:**
 <pre>
-  /* wide desktop screen */
+  /* wide desktop screen - additional */
   @media screen and (min-width: 1025px) {
   }
-  /* desktop screen */
+  /* desktop screen - additional */
   @media screen and (max-width: 1024px) {
   }
-  /* ipad screen */
-  @media screen and (max-width: 768px) {
+  /* ipad screen - required*/
+  @media screen and (max-width: 790px) {
   }
-  /* mobile screen */
-  @media screen and (max-width: 480px) {
+  /* mobile screen - required */
+  @media screen and (max-width: 590px) {
   }
 </pre> 
 
@@ -91,17 +91,17 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
 - Uses consistent design for the header and footer area in all pages. 
 **CSS Requirements:**
 <pre>
-  /* wide desktop screen */
+  /* wide desktop screen - additional */
   @media screen and (min-width: 1025px) {
   }
-  /* desktop screen */
+  /* desktop screen - additional */
   @media screen and (max-width: 1024px) {
   }
-  /* ipad screen */
-  @media screen and (max-width: 768px) {
+  /* ipad screen - required*/
+  @media screen and (max-width: 790px) {
   }
-  /* mobile screen */
-  @media screen and (max-width: 480px) {
+  /* mobile screen - required */
+  @media screen and (max-width: 590px) {
   }
 </pre>
 

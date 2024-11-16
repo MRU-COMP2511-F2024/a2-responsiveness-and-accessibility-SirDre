@@ -1,0 +1,134 @@
+/* responsive design or accessibility */
+/* wide desktop screen */
+@media screen and (min-width: 1025px) {
+    .banner-grid {
+        height: 200px;
+    }
+    .banner-grid {
+        height: 200px;
+    }
+    .banner-large { 
+        width: auto;
+    }
+    .banner-medium { 
+        width: auto;
+    }
+    .banner-small { 
+        width: auto;
+    }   
+
+}
+/* desktop screen */
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .banner-grid {
+        gap: 10px;
+    }
+    .banner-large {
+        margin-bottom: 10px;
+    }
+    .banner-medium,
+    .banner-small {
+        flex: calc(80% - 10px);
+    }
+    .banner-grid figure {
+        min-height: 180px;
+    }
+
+}
+/* ipad screen */
+@media screen and (max-width: 790px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+    .banner-grid {
+        flex-wrap: wrap;
+    }
+    .banner-large,
+    .banner-medium,
+    .banner-small { 
+        flex: 48%; 
+    }
+    
+    .info {
+        flex: wrap;
+        gap: 20px;
+    }
+    
+}
+/* mobile screen */
+@media screen and (max-width: 590px) {
+
+    header,
+    nav ul,
+    .company-info,
+    .banner-grid,
+    .upper-container,
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Vertical navigation, this is responsible for how the header list looks.*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    /* Single-column layout for tyhe main content(Arranges each item in a single column */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+ 
+    nav ul li {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+    .banner-grid-hero {
+        height: 200px;
+    }
+    .banner-grid {
+        gap: 10px;
+    }
+    .banner-grid figure {
+        min-height: 150px;
+        margin-bottom: 10px;
+    }
+    .banner-large,
+    .banner-medium,
+    .banner-small {
+        width: 100%;
+    }
+    .banner-grid figcaption {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .banner-content {
+        margin: 20px;
+        max-width: 100%;
+    }
+    .banner-content h1,
+    .banner-content h2 { 
+        font-size: 1.2em; 
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .product figure {
+        height: 150px;
+    }
+    .info > div {
+        text-align: center;
+    }
+
+    
+}

@@ -1,134 +1,215 @@
 /* responsive design or accessibility */
 /* wide desktop screen */
 @media screen and (min-width: 1025px) {
-    .banner-grid {
-        height: 200px;
+    body {
+        max-width: 1200px; /* large device */
+        margin: 0 auto;
+        background-color: #f5f5f5;
     }
-    .banner-grid {
-        height: 200px;
-    }
-    .banner-large { 
-        width: auto;
-    }
-    .banner-medium { 
-        width: auto;
-    }
-    .banner-small { 
-        width: auto;
-    }   
 
+    /* header for larger screens */
+    header {
+        padding: 20px 40px;
+    }
+    header .company-info {
+        margin-top: 0;
+    }
+
+    /* banner for better visual impact */
+    main .banner-grid-hero {
+        height: 500px;
+    }
+    main .banner-content {
+        max-width: 500px;
+        margin: 60px;
+    }
+    main .banner-content h1 {
+        font-size: 3em;
+    }
+
+    /* product grid */
+    main .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        margin: 40px 0;
+    }
+
+    /* banner grid */
+    main .banner-grid {
+        height: 250px;
+    }
+
+    /* footer spacing */
+    footer .upper-container {
+        padding: 40px 0;
+    }
+
+    footer .info {
+        padding: 40px;
+        gap: 60px;
+    }
 }
+
 /* desktop screen */
 @media screen and (max-width: 1024px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .banner-grid {
-        gap: 10px;
-    }
-    .banner-large {
-        margin-bottom: 10px;
-    }
-    .banner-medium,
-    .banner-small {
-        flex: calc(80% - 10px);
-    }
-    .banner-grid figure {
-        min-height: 180px;
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
+    /* header */
+    header {
+        padding: 15px 30px;
+    }
+
+    /* banner sizes */
+    main .banner-grid-hero {
+        height: 450px;
+    }
+    main .banner-content {
+        max-width: 450px;
+        margin: 50px;
+    }
+
+    /* product grid */
+    main .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    /* banner grid */
+    main .banner-grid {
+        height: 220px;
+    }
+    main .banner-medium {
+        flex-basis: 58%;
+    }
+    main .banner-small {
+        flex-basis: 20%;
+    }
 }
-/* ipad screen */
+
+/* medium screens (590px - 790px) */
 @media screen and (max-width: 790px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }    
-    .banner-grid {
-        flex-wrap: wrap;
-    }
-    .banner-large,
-    .banner-medium,
-    .banner-small { 
-        flex: 48%; 
-    }
-    
-    .info {
-        flex: wrap;
-        gap: 20px;
-    }
-    
-}
-/* mobile screen */
-@media screen and (max-width: 590px) {
-
-    header,
-    nav ul,
-    .company-info,
-    .banner-grid,
-    .upper-container,
-    .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /*Vertical navigation, this is responsible for how the header list looks.*/
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
-    }
-
-    /* Single-column layout for tyhe main content(Arranges each item in a single column */
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: whitesmoke;
-    }
- 
-    nav ul li {
-        margin: 8px 0;
-        font-size: 18px;
-    }
-    .banner-grid-hero {
-        height: 200px;
-    }
-    .banner-grid {
-        gap: 10px;
-    }
-    .banner-grid figure {
-        min-height: 150px;
-        margin-bottom: 10px;
-    }
-    .banner-large,
-    .banner-medium,
-    .banner-small {
-        width: 100%;
-    }
-    .banner-grid figcaption {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-    .banner-content {
-        margin: 20px;
+    body {
         max-width: 100%;
+        padding: 0 15px;
     }
-    .banner-content h1,
-    .banner-content h2 { 
-        font-size: 1.2em; 
+    /* header */
+    header {
+        flex-direction: column;
+        align-items: center;
     }
-    .product-grid {
-        grid-template-columns: 1fr;
+    header .company-info {
+        justify-content: center;
+        margin-top: 15px;
     }
-    .product figure {
+
+    /* banner */
+    main .banner-grid-hero {
+        height: 300px;
+    }
+    main .banner-content {
+        margin: 20px;
+        max-width: 300px;
+    }
+    /* banner grid */
+    main .banner-grid {
+        height: auto;
+    }
+
+    /* product grid - layout 2x2 */
+    main .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .banner-medium,
+    main .banner-small {
+        flex-basis: calc(50% - 10px);
         height: 150px;
     }
-    .info > div {
+
+    /* footer */
+    footer .info {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    footer .info > div {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* small screens (< 590px) */
+@media screen and (max-width: 590px) {
+    /* header */
+    header .company-info div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-info div {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+    /* navigation adjustments, this is responsible for how the header list looks.*/
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
         text-align: center;
     }
 
-    
+    /* Banner adjustments */
+    main .banner-grid-hero {
+        height: 250px;
+    }
+    main .banner-content {
+        margin: 10px;
+        max-width: 250px;
+    }
+    main .banner-content h1 {
+        font-size: 2em;
+    }
+    main .banner-content h2 {
+        font-size: 1.2em;
+    }
+
+    /* banner grid - single column layout for tyhe main content(Arranges each item in a single column */
+    main .banner-grid {
+        flex-direction: column;
+        height: auto;
+    }
+    main .banner-medium,
+    main .banner-small {
+        flex-basis: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    /* product grid - single column */
+    main .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer adjustments */
+    footer .upper-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .info {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .info > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .social-network {
+        padding: 10px;
+    }
 }

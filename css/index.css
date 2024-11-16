@@ -158,9 +158,3 @@ main .actions a {
 main .actions a:hover {
   background-color: #34495e;
 }
-
-/* This displays the product into two columns*/
-main .product-grid {
-  grid-template-columns: 1fr, 1fr;
-  gap: 15px;
-}

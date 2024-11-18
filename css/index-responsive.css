@@ -1,7 +1,8 @@
 /* responsive design or accessibility */
-/* wide desktop screen */
+/* wide desktop screen (1024px > ) */
 @media screen and (min-width: 1025px) {
     body {
+        max-width: 1025px;
         margin: 0 auto;
     }
 
@@ -54,7 +55,6 @@
     body {
         max-width: 1024px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     /* header */
@@ -91,10 +91,12 @@
 
 /* medium screens (590px - 790px) */
 @media screen and (max-width: 790px) {
+    /* body */
     body {
         max-width: 100%;
         padding: 0 15px;
     }
+
     /* header */
     header {
         flex-direction: column;
@@ -102,7 +104,20 @@
     }
     header .company-info {
         justify-content: center;
-        margin-top: 15px;
+    }
+
+    header .company-info div {
+        flex-direction: column;
+        align-items: center;
+        margin: 1.2rem;
+    }
+
+    /* navigation */
+    nav ul {
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 8px;
     }
 
     /* banner */
@@ -142,28 +157,30 @@
 
 /* small screens (< 590px) */
 @media screen and (max-width: 590px) {
+
     /* header */
-    header .company-info div {
+    header {
         flex-direction: column;
         align-items: center;
     }
-    .company-info div {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
+
+    header .company-info {
+        flex-wrap: wrap;
+        margin-top: 15px;
     }
+
     /* navigation adjustments, this is responsible for how the header list looks.*/
     nav ul {
         flex-direction: column;
         align-items: center;
     }
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0;
         width: 100%;
         text-align: center;
     }
 
-    /* Banner adjustments */
+    /* banner adjustments */
     main .banner-grid-hero {
         height: 250px;
     }
@@ -195,7 +212,7 @@
         grid-template-columns: 1fr;
     }
 
-    /* Footer adjustments */
+    /* footer */
     footer .upper-container {
         flex-direction: column;
         gap: 20px;

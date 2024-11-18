@@ -95,7 +95,7 @@ nav ul li a {
     align-items: center;
 }
 nav ul li a:hover {
-    color: var(--light-gray);
+    color: var(--secondary-color);
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -122,20 +122,17 @@ footer {
     background-color: var(--white);
 	color: var(--black);
 }
-
 footer .upper {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 20px 0;
 }
-
 footer .upper-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-
 footer .upper-content {
     display: flex;
     flex-direction: column;
@@ -145,7 +142,6 @@ footer .upper-content {
 footer .upper-content h3 {
     margin: 1px;
 }
-
 footer .upper-content p {
     color: var(--light-gray);
     font-size: 12px;
@@ -155,7 +151,6 @@ footer .upper-content span {
     color: var(--white);
     font-size: 42px;
 }
-
 footer .info {
     display: flex;
     padding: 20px;

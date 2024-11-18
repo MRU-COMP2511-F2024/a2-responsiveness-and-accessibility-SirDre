@@ -10,8 +10,55 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
 
 # Part 2
 ### Questions:
-- document the category of issues that you identified through the manual and automated analysis above
+- Document the category of issues that you identified through the manual and automated analysis above.
+  <pre>
+  - layout issues and improvements:
+      Issues:
+        - Issues spacing between elements
+        - Issues alignment of elements
+        - Better grid and flexbox implementation
+      Improvements:      
+        - Properly aligned elements
+        - Better organized breakpoints
+        - Enhanced responsive behavior
+  - Styling:
+      Issues:
+        - Issues determine which is a better CSS property
+        - Issues implementing better spacing and alignment
+      Improvements:
+        - Designing with modern and clean layout in mind
+        - Implement clear visual hierarchy in HTML 
+        - Combined similar rules
+        - Removed redundant styles
+  - Structure:
+      Issues:
+        - Remove dl/dd with semantic div structure
+        - Revise item pages due to responsive and accessibility issues
+      Improvements:
+        - Implemented proper form groups
+        - Improved radio button and checkbox grouping
+        - Improved better button organization
+  - Accessibility:
+      Issues:
+        - Struggle with labeling and additional requirement for forms accessibility
+        - Previous form structure with semantic HTML was not functioning as I taught.
+      Improvements:
+        - Implement label and input associations using for and id attributes.
+        - Included descriptive placeholders
+        - Included title attributes for validation
+        - Improved form structure with semantic HTML
+  - Group Efforts:  
+        Organization and planning.
+        Restructing most of the pages.
+        Trying to familized with the CSS rules.
+    
+  </pre>
+
 - What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
+<pre>
+
+
+</pre>
 - How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
 
 

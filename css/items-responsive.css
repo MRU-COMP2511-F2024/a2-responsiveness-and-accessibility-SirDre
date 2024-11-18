@@ -1,5 +1,5 @@
 /* responsive design or accessibility */
-/* wide desktop screen */
+/* wide desktop screen (1024px > ) */
 @media screen and (min-width: 1025px) {
     body {
         margin: 0 auto;
@@ -12,16 +12,22 @@
     header .company-info {
         margin-top: 0;
     }
+ 
+    /* article */
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+    }    
+    article .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    article .tabs {
+        grid-column: 1 / -1;
+    }
 
- 	/*--------------------------------
-	
-		Define items Responsiveness
-	
-	----------------------------------
-	*/
-
-
-    /* footer spacing */
+    /* footer */
     footer .upper-container {
         padding: 40px 0;
     }
@@ -32,12 +38,10 @@
     }
 }
 
-/* desktop screen */
+/* desktop screen (790px - 1024px) */
 @media screen and (max-width: 1024px) {
     body {
-        max-width: 1024px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     /* header */
@@ -45,21 +49,29 @@
         padding: 15px 30px;
     }
 
-	/*--------------------------------
-	
-		Define items Responsiveness
-	
-	----------------------------------
-	*/
+    /* article */
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+    }    
+    article .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    article .tabs {
+        grid-column: 1 / -1;
+    }    
  
 }
 
 /* medium screens (590px - 790px) */
 @media screen and (max-width: 790px) {
+    /* body */
     body {
-        max-width: 100%;
-        padding: 0 15px;
+        margin: 0 auto;
     }
+
     /* header */
     header {
         flex-direction: column;
@@ -67,15 +79,48 @@
     }
     header .company-info {
         justify-content: center;
-        margin-top: 15px;
     }
 
-	/*--------------------------------
-	
-		Define items Responsiveness
-	
-	----------------------------------
-	*/
+    header .company-info div {
+        flex-direction: column;
+        align-items: center;
+        margin: 1.2rem;
+    }
+
+    /* navigation */
+    nav ul {
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 8px;
+    }
+  
+    /* article */
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }    
+    article .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    article .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    article .product-info h1 {
+        font-size: 1.5em;
+    }
+    article .product-info .price {
+        font-size: 1.6em;
+    }
+    article .product-info .quantity-controls {
+        justify-content: center;
+        width: 100%;
+    }
 
     /* footer */
     footer .info {
@@ -90,36 +135,79 @@
 
 /* small screens (< 590px) */
 @media screen and (max-width: 590px) {
+    /* body */
+    body {
+        margin: 0 auto;
+    }
+
     /* header */
-    header .company-info div {
+    header {
         flex-direction: column;
         align-items: center;
     }
-    .company-info div {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
+    header .company-info {
+        flex-wrap: wrap;
+        margin-top: 15px;
     }
+
     /* navigation adjustments, this is responsible for how the header list looks.*/
     nav ul {
         flex-direction: column;
         align-items: center;
     }
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0;
         width: 100%;
         text-align: center;
     }
 
+    /* article */
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
 
-	/*--------------------------------
-	
-		Define items Responsiveness
-	
-	----------------------------------
-	*/
+    /* product layout */
+    article .product-contents {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    article .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    article .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    article .product-info h1 {
+        font-size: 1.5em;
+    }
+    article .product-info .price {
+        font-size: 1.6em;
+    }
+    article .product-info .quantity-controls {
+        justify-content: center;
+        width: 100%;
+    }
 
-    /* Footer adjustments */
+    /* tabs */
+    article .tabs {
+        grid-column: 1 / -1;
+    }
+    article .tab-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    article .tab-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* footer */
     footer .upper-container {
         flex-direction: column;
         gap: 20px;

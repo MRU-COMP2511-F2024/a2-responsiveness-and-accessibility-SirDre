@@ -14,11 +14,11 @@ main .breadcrumb span {
 
 
 /* article styles */
-article { 
+.product-contents { 
+    display: grid;
+    grid-template-columns: 2fr auto;
     margin: 0 auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 article .product-image {
 	text-align: center;
@@ -27,6 +27,8 @@ article .product-image img {
 	max-width: 100%;
 	height: auto;
 }
+
+/* product info */
 article .product-info {
 	padding-right: 20px;
 }
@@ -34,50 +36,50 @@ article .product-info h1 {
 	font-size: 1.8em;
 	margin-bottom: 20px;
 }
-article .product-code {
+article .product-info .product-code {
 	margin-bottom: 10px;
 	color: var(--lightgray);
 }
-article .product-brand {
+article .product-info .product-brand {
 	margin-bottom: 20px;
 }
-article .product-brand strong {
+article .product-info .product-brand strong {
 	margin-right: 10px;
 }
-article .price {
+article .product-info .price {
 	font-size: 2em;
 	margin-bottom: 20px;
 }
-article .oldprice {
+article .product-info .oldprice {
 	text-decoration: line-through;
 	color: var(--darkgray);
 	font-size: 1rem;
 }
-article .quantity {
+article .product-info .quantity {
 	margin-bottom: 20px;
 }
-article .quantity label {
+article .product-info .quantity label {
 	display: block;
 	margin-bottom: 5px;
 }
-article .quantity-controls {
+article .product-info .quantity .quantity-controls {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
-article .quantity input {
+article .product-info .quantity input {
 	width: 60px;
 	padding: 8px;
 	text-align: center;
-	border: 1px solid var(--lightgray);
+	border: 1px solid var(--darkgray);
 }
-article .quantity button {
+article .product-info .quantity button {
 	padding: 8px 12px;
 	background: var(--lightgray);
 	border: 1px solid var(--darkgray);
 	cursor: pointer;
 }
-article .add-to-basket {
+article .product-info .add-to-basket {
 	width: 100%;
 	padding: 15px;
 	background-color: var(--primary-color);
@@ -87,24 +89,24 @@ article .add-to-basket {
 	cursor: pointer;
 	margin-bottom: 20px;
 }
-article .add-to-basket:hover {
+article .product-info .add-to-basket:hover {
 	background-color: var(--secondary-color);
 }
 
-article .social-share {
+article .product-info .social-share {
     justify-content: space-between;
     margin-top: 20px;
 }
 article .rating span {
     margin: 10px 0;
 }
-article .material-symbols-outlined {
+article .product-info .material-symbols-outlined {
     font-size: 20px;
 }
-article .material-symbols-outlined.filled {
+article .product-info .material-symbols-outlined.filled {
     color: var(--gold);
 }
-article .material-symbols-outlined.empty {
+article .product-info .material-symbols-outlined.empty {
     color: var(--lightgray);
 }
 

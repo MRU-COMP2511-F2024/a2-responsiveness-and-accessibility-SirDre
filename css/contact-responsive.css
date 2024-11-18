@@ -1,5 +1,5 @@
 /* responsive design or accessibility */
-/* wide desktop screen */
+/* wide desktop screen (1024px > ) */
 @media screen and (min-width: 1025px) {
     body {
         margin: 0 auto; 
@@ -59,6 +59,7 @@
         max-width: 100%;
         padding: 0 15px;
     }
+
     /* header */
     header {
         flex-direction: column;
@@ -119,14 +120,13 @@
 /* small screens (< 590px) */
 @media screen and (max-width: 590px) {
     /* header */
-    header .company-info {
-        justify-content: center;
-        width: 100%;
-    }    
-    header .company-info div {
+    header {
         flex-direction: column;
         align-items: center;
-        margin: 1.2rem;
+    }
+    header .company-info {
+        flex-wrap: wrap;
+        margin-top: 15px;
     }
 
     /* navigation adjustments, this is responsible for how the header list looks.*/

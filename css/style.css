@@ -181,7 +181,7 @@ footer .social-network img {
     margin: 0 10px;
 }
 footer .copyright {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
     padding: 20px 0;

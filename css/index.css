@@ -22,6 +22,8 @@ main .banner-content {
   max-width: 400px;
   z-index: 2;
   margin: 40px;
+  float: right;
+  text-align: right;
 }
 main .banner-content h1 {
   font-size: 2.5rem;

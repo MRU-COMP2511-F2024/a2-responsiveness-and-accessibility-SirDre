@@ -22,14 +22,14 @@ main .contact-title h1 span {
 
 main .contact-description {
     text-align: center;
-    color: var(--darkgray);
+    color: var(--black);
     margin-bottom: 40px;
 }
 
 main .contact-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 /* contact form */
@@ -152,7 +152,7 @@ main .contact-details h2 {
     margin-bottom: 20px;
 }
 main .contact-details p {
-    color: var(--darkgray);
+    color: var(--black);
     margin-bottom: 20px;
 }
  

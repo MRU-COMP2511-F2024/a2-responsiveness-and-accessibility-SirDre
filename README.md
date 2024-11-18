@@ -56,9 +56,17 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
 
 - What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
   <pre>
-      A good user experience is logically an asset when designing website. Clear visual identification and error messaging are very important aspects of the experience. Often times bad and lazy design decisions, e.g., confusing colored elements, can cause the user to miss out on important alerts or instruction. The solution lies in giving error messages a bright color and clear language that stands out. Of course, full reliance on pop-up messages is a bad idea since some users have them all turned off.
-      Furthermore, issues such as ambiguity or vagueness in terminology when designing website can be a challenge. For example, vague descriptions can cause a considerable obstacle for users in the way that they need more time and energy to make sense of these terms. Such as, being asked to choose a "Salutation" instead of "Titles or Honorifics" the difference is not that slight and may lead to confusion. However, using clear, familiar, and task-oriented terminology that matches user expectation and experience could reduce confusion.
-      Lastly, data input challenges arise when users find it hard to input data accurately since input fields are badly designed and controls do not match an anticipated data type. For instance, a field for a phone number that does not support another countries phone number format can lead to incorrect data inputs. However, improving form’s structure and its usability, thereby making it easy for the user to accurately input the required data.
+      A good user experience is logically an asset when designing website. Clear visual identification and error messaging are very important aspects of the
+      experience. Often times bad and lazy design decisions, e.g., confusing colored elements, can cause the user to miss out on important alerts or instruction.
+      The solution lies in giving error messages a bright color and clear language that stands out. Of course, full reliance on pop-up messages is a bad idea
+      since some users have them all turned off.
+      Furthermore, issues such as ambiguity or vagueness in terminology when designing website can be a challenge. For example, vague descriptions can cause a
+      considerable obstacle for users in the way that they need more time and energy to make sense of these terms. Such as, being asked to choose a "Salutation" 
+      instead of "Titles or Honorifics" the difference is not that slight and may lead to confusion. However, using clear, familiar, and task-oriented terminology
+      that matches user expectation and experience could reduce confusion.
+      Lastly, data input challenges arise when users find it hard to input data accurately since input fields are badly designed and controls do not match an
+      anticipated data type. For instance, a field for a phone number that does not support another countries phone number format can lead to incorrect data
+      inputs. However, improving form’s structure and its usability, thereby making it easy for the user to accurately input the required data.
     </pre>
 - How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
 

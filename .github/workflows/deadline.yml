@@ -1,5 +1,5 @@
 # Deadline Check workflow for fail commits after deadline dates
-name: Deadline Check for November 18, 2024
+name: Deadline Check for November 18, 2024 2359
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     - name: Check commit dates
       run: |
         # Set deadline date (MST)
-        DEADLINE="2024-11-18T11:59:59Z"
+        DEADLINE="2024-11-18T23:59:59Z"
         DEADLINE_TIMESTAMP=$(date -d "$DEADLINE" +%s)
         
         # Get all commits in the push/PR
@@ -34,7 +34,7 @@ jobs:
         VIOLATION=0
         for COMMIT_TIMESTAMP in $COMMITS; do
           if [ $COMMIT_TIMESTAMP -gt $DEADLINE_TIMESTAMP ]; then
-            echo "Error: Found commit after deadline of November 18, 2024 11:59:59"
+            echo "Error: Found commit after deadline of November 18, 2024 23:59:59"
             VIOLATION=1
             # Convert timestamp to readable date for error message
             COMMIT_DATE=$(date -d "@$COMMIT_TIMESTAMP" "+%Y-%m-%d %H:%M:%S MST")

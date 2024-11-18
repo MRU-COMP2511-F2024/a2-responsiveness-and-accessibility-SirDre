@@ -2,9 +2,7 @@
 /* wide desktop screen */
 @media screen and (min-width: 1025px) {
     body {
-        max-width: 1200px; /* large device */
         margin: 0 auto;
-        background-color: #f5f5f5;
     }
 
     /* header for larger screens */
@@ -15,12 +13,13 @@
         margin-top: 0;
     }
 
-	/*--------------------------------
-	
-		Define shop Responsiveness
-	
-	----------------------------------
-	*/
+
+    /* product grid */
+    main .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        margin: 40px 0;
+    }
 
     /* footer spacing */
     footer .upper-container {
@@ -46,13 +45,11 @@
         padding: 15px 30px;
     }
 
-	/*--------------------------------
-	
-		Define shop Responsiveness
-	
-	----------------------------------
-	*/
- 
+    /* product grid */
+    main .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
 }
 
 /* medium screens (590px - 790px) */
@@ -71,12 +68,11 @@
         margin-top: 15px;
     }
 
-	/*--------------------------------
-	
-		Define shop Responsiveness
-	
-	----------------------------------
-	*/
+
+    /* product grid - layout 2x2 */
+    main .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /* footer */
     footer .info {
@@ -112,13 +108,10 @@
         text-align: center;
     }
 
-
-	/*--------------------------------
-	
-		Define shop Responsiveness
-	
-	----------------------------------
-	*/
+    /* product grid - single column */
+    main .product-grid {
+        grid-template-columns: 1fr;
+    }
 
     /* Footer adjustments */
     footer .upper-container {

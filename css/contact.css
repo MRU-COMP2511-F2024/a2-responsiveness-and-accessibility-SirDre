@@ -29,19 +29,19 @@ main .contact-description {
 main .contact-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 40px;
+    gap: 3rem;
 }
 
 /* contact form */
 main .contact-form {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 main .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 main .contact-form fieldset {
@@ -53,7 +53,7 @@ main .contact-form fieldset {
 
 main .contact-form legend {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: bold;
     padding: 0 0.5rem;
 }
 
@@ -61,7 +61,7 @@ main .form-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 main .form-group:last-child {
@@ -78,9 +78,9 @@ main .form-group input[type="tel"],
 main .form-group input[type="email"],
 main .form-group select,
 main .form-group textarea {
-    padding: 0.75rem;
     border: 1px solid var(--darkgray);
     border-radius: 4px;
+    padding: 0.8rem;
     font-size: 1rem;
 }
 
@@ -153,7 +153,7 @@ main .contact-details h2 {
 }
 main .contact-details p {
     color: var(--darkgray);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
  
 /* contact info container */
@@ -172,15 +172,14 @@ main .contact-info > div {
     box-shadow: 0 2px 4px var(--black-rbga);
 }
 main .contact-info .material-symbols-outlined {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.75rem;
-    border-radius: 50%;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
 }
 main .contact-info > div span {
     display: flex;
@@ -188,7 +187,7 @@ main .contact-info > div span {
     gap: 0.25rem;
 }
 main .contact-info span:not(.material-symbols-outlined) {
-    color: #64748b;
+    color: var(--secondary-color);
     font-size: 1rem;
     word-break: break-word;
 }

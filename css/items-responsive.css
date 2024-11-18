@@ -2,9 +2,7 @@
 /* wide desktop screen */
 @media screen and (min-width: 1025px) {
     body {
-        max-width: 1200px; /* large device */
         margin: 0 auto;
-        background-color: #f5f5f5;
     }
 
     /* header for larger screens */

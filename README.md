@@ -74,7 +74,12 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
       input the required data.
     </pre>
 - How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
-
+    <pre>
+      The Gestalt principles are crucial for providing a diverse user experience that can significantly 
+      enhance accessibility by guiding how users interpret and interact with visual information.
+      The principles of proximity, resemblance, continuity, closure, and figure/ground are particularly 
+      important when designing adaptable and user-friendly websites.
+    </pre>
 
 ## Agriculture store
 

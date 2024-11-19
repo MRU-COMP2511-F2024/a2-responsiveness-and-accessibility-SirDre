@@ -20,7 +20,7 @@ jobs:
     - name: Check commit dates
       run: |
         # Set deadline date (MST)
-        DEADLINE="2024-11-18T23:59:59Z"
+        DEADLINE="2024-11-19T00:59:59Z"
         DEADLINE_TIMESTAMP=$(date -d "$DEADLINE" +%s)
         
         # Get all commits in the push/PR

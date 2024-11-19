@@ -77,7 +77,7 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
     <pre>
         The Gestalt principles play a crucial role in creating experiences that can significantly enhance 
       accessibility by helping how users interpret and interact with visual information. The principles 
-      of proximity, resemblance, continuity, closure, and figure/ground are very important during changes
+      of proximity, similarity, continuity, closure, and figure/ground are very important during changes
       made to the website.
         Designing adaptable and user-friendly websites is important. Perhaps the most crucial principle 
       to consider when making changes is proximity. This principle is very useful for grouping features 
@@ -100,6 +100,10 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
       When there is sufficient contrast between the text and the background behind it, this can be easily 
       read by users with visual impairments, allowing them to focus on the matter as well and navigate 
       the interface better.
+        With the Gestalt principles in mind, the changes made to the website design made a significant 
+      difference in the looks and feel. The responsiveness and accessibility enhancements improve the 
+      aesthetic appeal of the website. The visual features like icons, contribute to the human-friendly 
+      interactions and support of a wide range of users through the implementation of these principles.
     </pre>
 
 ## Agriculture store

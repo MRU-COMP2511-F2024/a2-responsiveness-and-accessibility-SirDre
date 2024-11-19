@@ -75,10 +75,31 @@ https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/
     </pre>
 - How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
     <pre>
-      The Gestalt principles are crucial for providing a diverse user experience that can significantly 
-      enhance accessibility by guiding how users interpret and interact with visual information.
-      The principles of proximity, resemblance, continuity, closure, and figure/ground are particularly 
-      important when designing adaptable and user-friendly websites.
+        The Gestalt principles play a crucial role in creating experiences that can significantly enhance 
+      accessibility by helping how users interpret and interact with visual information. The principles 
+      of proximity, resemblance, continuity, closure, and figure/ground are very important during changes
+      made to the website.
+        Designing adaptable and user-friendly websites is important. Perhaps the most crucial principle 
+      to consider when making changes is proximity. This principle is very useful for grouping features 
+      like form fields or navigation links together. By placing these elements in close proximity, users
+      can quickly understand their relationships and minimising confusion and easing navigation. 
+      Utilizing proximity is an effective method for individuals with cognitive impairments.
+        The principle of similarity, aids in The process involves forming visual cues and sorting data 
+      uniformly when elements are group together. The system provides similar styles, such as color, 
+      shape, or font. Similar functions helps developers in quickly identifying and understanding the 
+      purpose of various elements. This principle is particularly beneficial for developers who have 
+      visual impairments.
+        Continuity encourages a better flow of information that follows consistently. supports simple 
+      reading of the text. This principle is an effective strategy for individuals who struggle with 
+      attention span or learning disabilities, as it helps them read and understand the information.
+        The principle of closure allows us to see incomplete shapes as whole. This principle is extremely 
+      powerful. way of creating intuitive interfaces. When applied effectively, the principle of closure 
+      proves to be beneficial. This feature is beneficial for users with cognitive challenges, as it helps
+      users fill in the blanks without experiencing confusion.
+        Lastly, the figure or ground principle and how it helps to separate main content from the background.
+      When there is sufficient contrast between the text and the background behind it, this can be easily 
+      read by users with visual impairments, allowing them to focus on the matter as well and navigate 
+      the interface better.
     </pre>
 
 ## Agriculture store

@@ -1,48 +1,71 @@
-/* article main styles */
-article, .article-content-grid {
-    line-height: 1.6;
-    max-width: 90%;
-    margin: 30px;
-}
-
 /* article breadcrumb styles */
 main .breadcrumb {
-	padding: 15px 20px;
+    padding: 15px 20px;
 }
+
 main .breadcrumb a {
-	color: gray;
-	text-decoration: none;
+    color: gray;
+    text-decoration: none;
 }
+
 main .breadcrumb span {
-	margin: 0 10px;
-	color: darkgray;
+    margin: 0 10px;
+    color: darkgray;
 }
+
+/* article main styles */
+article {
+    line-height: 1.6;
+    margin: 20px;
+}
+
 
 /* article styles */
-main h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #2c3e50;
+main section .article-content {
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* improved typography for readability */
+main section .article-content h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+main section .article-content h3 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: var(--lightgray);
     font-style: italic;
 }
 
-main h3 {
-    font-size: 1.4em;
-    color: lightgray;
-    margin-bottom: 30px;
-    font-style: italic;
+main section .article-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--darkslategray);
 }
 
-main .article-content, .article-content-grid {
-    font-size: 1.1em;
-    margin-bottom: 40px;
+/* focus states for accessibility */
+main section .article-content a:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* grid Layout for Content Sections */
+main section .article-content {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 main .article-content em,
 main .article-content a,
 main .article-content-grid em,
 main .article-content-grid a {
-    color: lightslategrey;
+    color: var(--darkslategray);
     text-decoration: none;
 }
 
@@ -50,21 +73,42 @@ main .article-content a:hover {
     text-decoration: underline;
 }
 
-/* article grid style */
-main .article-content-grid {
+.article-content-grid figure {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-column: 3 / span 4;
+    position: relative;
+    margin: 0 auto;
 }
 
-main .text-column {
+.article-content-grid figure img {
+    width: 90%;
+    line-height: 1.8;
+    padding: 0 1%;
+    object-fit: cover;
+}
+
+.article-content-grid figcaption {
+    padding: 4px;
+    text-align: left;
+    padding-right: 16px;
+}
+
+/* Main grid container */
+.article-content-grid article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+/* First column */
+.article-content-grid article .text-column {
+    grid-column: span 2;
+    /* moved to last column */
+    grid-row: 1;
+    /* spans two rows */
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-main .image-column {
-    width: 90%;
-    line-height: 1.8;
-    padding: 0 1%;
 }

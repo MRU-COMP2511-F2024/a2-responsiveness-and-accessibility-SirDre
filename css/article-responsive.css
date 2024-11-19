@@ -9,11 +9,12 @@
     header {
         padding: 20px 40px;
     }
+
     header .company-info {
         margin-top: 0;
     }
 
-	/*--------------------------------
+    /*--------------------------------
 	
 		Define article Responsiveness
 	
@@ -34,9 +35,7 @@
 /* desktop screen */
 @media screen and (max-width: 1024px) {
     body {
-        max-width: 1024px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     /* header */
@@ -44,21 +43,31 @@
         padding: 15px 30px;
     }
 
-	/*--------------------------------
-	
-		Define article Responsiveness
-	
-	----------------------------------
-	*/
- 
+    section .article-content {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    section .article-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .text-column,
+    .image-column {
+        width: 100%;
+    }
+
 }
 
 /* medium screens (590px - 790px) */
 @media screen and (max-width: 790px) {
+
     /* body */
     body {
-        max-width: 100%;
-        padding: 0 15px;
+        margin: 0 auto;
     }
 
     /* header */
@@ -66,6 +75,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     header .company-info {
         justify-content: center;
     }
@@ -80,16 +90,45 @@
     nav ul {
         justify-content: center;
     }
+
     nav ul li {
         margin: 8px;
     }
-	/*--------------------------------
-	
-		Define article Responsiveness
-	
-	----------------------------------
-	*/
 
+    /* article */
+    article {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    article .image-column img {
+        width: auto;
+        height: auto;
+    }
+
+    article .text-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    article .text-column h1 {
+        font-size: 1.5em;
+    }
+
+    article .text-column h2 {
+        font-size: 1.4em;
+    }
+
+    .article-content-grid figure {
+        grid-column: 1 / -1;
+    }
+
+    .text-column {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
 
     /* footer */
     footer .info {
@@ -97,7 +136,7 @@
         justify-content: space-between;
     }
 
-    footer .info > div {
+    footer .info>div {
         flex-basis: calc(50% - 20px);
     }
 }
@@ -121,32 +160,71 @@
         flex-direction: column;
         align-items: center;
     }
+
     nav ul li {
         margin: 5px 0;
         width: 100%;
         text-align: center;
     }
 
-	/*--------------------------------
-	
-		Define article Responsiveness
-	
-	----------------------------------
-	*/
+    /* article */
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* article layout */
+    article {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    article .product-image img {
+        width: auto;
+        height: auto;
+    }
+
+    article .text-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    article .text-column h1 {
+        font-size: 1.5em;
+    }
+
+    article .text-column h2 {
+        font-size: 1.2em;
+    }
+
+    .article-content-grid figure {
+        grid-column: 1 / -1;
+    }
+
+    .text-column {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
 
     /* footer */
     footer .upper-container {
         flex-direction: column;
         gap: 20px;
     }
+
     footer .info {
         flex-direction: column;
         text-align: center;
     }
-    footer .info > div {
+
+    footer .info>div {
         width: 100%;
         margin-bottom: 20px;
     }
+
     footer .social-network {
         padding: 10px;
     }

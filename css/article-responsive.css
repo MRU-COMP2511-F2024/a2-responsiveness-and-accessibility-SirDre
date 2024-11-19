@@ -2,6 +2,7 @@
 /* wide desktop screen (1024px > ) */
 @media screen and (min-width: 1025px) {
     body {
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -35,6 +36,7 @@
 /* desktop screen */
 @media screen and (max-width: 1024px) {
     body {
+        max-width: 1200px;
         margin: 0 auto;
     }
 

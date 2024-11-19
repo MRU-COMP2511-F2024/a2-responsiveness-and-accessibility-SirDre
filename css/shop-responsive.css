@@ -2,6 +2,7 @@
 /* wide desktop screen (1024px > ) */
 @media screen and (min-width: 1025px) {
     body {
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -37,7 +38,6 @@
     body {
         max-width: 1024px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     /* header */
